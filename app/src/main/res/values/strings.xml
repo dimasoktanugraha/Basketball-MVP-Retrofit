@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Basketball</string>
+    <string name="city">CITY</string>
+    <string name="conference">conference</string>
+    <string name="division">division</string>
+    <string name="vs">VS</string>
+    <string name="status">STATUS</string>
+    <string name="year">YEAR</string>
+</resources>

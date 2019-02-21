@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.detail_game.DetailGameActivity"
+        android:layout_margin="10dp">
+
+
+    <TextView
+            android:id="@+id/detailGameTgl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="tgl"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_marginBottom="15dp"/>
+
+
+    <TextView
+            android:id="@+id/detailGamevs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailGameTgl"
+            android:layout_centerHorizontal="true"
+            android:text="@string/vs"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="18sp"/>
+
+    <TextView
+            android:id="@+id/detailGameScoreAway"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailGameTgl"
+            android:text="@string/vs"
+            android:layout_toEndOf="@id/detailGamevs"
+            android:gravity="center"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:id="@+id/detailGameScoreHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailGameTgl"
+            android:text="@string/vs"
+            android:layout_toStartOf="@id/detailGamevs"
+            android:gravity="center"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:id="@+id/detailGameNameAway"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailGameScoreAway"
+            android:text="@string/vs"
+            android:layout_toEndOf="@id/detailGamevs"
+            android:gravity="center"
+            android:layout_marginStart="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+    <TextView
+            android:id="@+id/detailGameNameHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailGameScoreHome"
+            android:text="@string/vs"
+            android:layout_toStartOf="@id/detailGamevs"
+            android:gravity="center"
+            android:layout_marginEnd="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+    <View
+            android:id="@+id/lineGame"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"
+            android:layout_below="@id/detailGameNameHome"
+            android:layout_marginTop="10dp"/>
+
+    <TextView
+            android:id="@+id/detailGameStat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/status"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_below="@id/lineGame"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"/>
+
+    <TextView
+            android:id="@+id/detailGameStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="STATUS"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:layout_below="@id/detailGameStat"
+            android:layout_marginBottom="5dp"/>
+
+    <TextView
+            android:id="@+id/detailGameye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/year"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_below="@id/detailGameStatus"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"/>
+
+    <TextView
+            android:id="@+id/detailGameYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="YEAR"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:layout_below="@id/detailGameye"
+            android:layout_marginBottom="5dp"/>
+
+    <ProgressBar
+            android:id="@+id/progresDetailGame"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>
